@@ -11,7 +11,7 @@ import SwiftUI
 struct Rule30ExerciseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreenView()
         }
     }
 }
