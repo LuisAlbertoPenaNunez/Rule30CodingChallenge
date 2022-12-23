@@ -26,18 +26,9 @@ struct WelcomeScreenView: View {
                     
                     
                     NavigationLink(
-                        destination: MainScreen().navigationBarHidden(true),
+                        destination: ArticleScreen().navigationBarHidden(true),
                         label: {
-                            Text("landing_page_cta")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.pink)
-                                .cornerRadius(50.0)
-                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
-                                .padding(.vertical)
+                            PrimaryButton(text:"landing_page_cta")
                         })
                     .navigationBarHidden(true)
                     

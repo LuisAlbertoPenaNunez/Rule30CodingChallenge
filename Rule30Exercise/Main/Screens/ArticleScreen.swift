@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainScreen: View {
+struct ArticleScreen: View {
     let rule30Previews = [
         mainScreenPreviewPicture1,
         mainScreenPreviewPicture2,
@@ -42,7 +42,7 @@ struct MainScreen: View {
 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(0..<rule30Previews.count) {index in
+                        ForEach(0..<rule30Previews.count, id: \.self) {index in
                             Image(rule30Previews[index])
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -53,7 +53,7 @@ struct MainScreen: View {
                 }
                 
                 Divider()
-                    .padding()
+                    .padding([.bottom, .top])
                 
                 HStack {
                     Text("main_screen_article_section")
@@ -67,21 +67,12 @@ struct MainScreen: View {
             .padding()
             
             
-            Text("main_screen_cta")
-                .font(.title3)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(Color.pink)
-                .cornerRadius(50.0)
-                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
-                .padding(.horizontal)
+                PrimaryButton(text: "main_screen_cta")
                 .onTapGesture {
                     showingCredits.toggle()
                 }
                 .sheet(isPresented: $showingCredits) {
-                    Rule30SheetScreen()
+                    LiveDemoScreen()
                 }
         }
     }
@@ -89,6 +80,6 @@ struct MainScreen: View {
 
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MainScreen()
+        ArticleScreen()
     }
 }

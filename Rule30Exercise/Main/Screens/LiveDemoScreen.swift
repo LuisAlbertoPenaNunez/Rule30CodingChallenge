@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Rule30SheetScreen: View {
+struct LiveDemoScreen: View {
     var body: some View {
         ZStack {
             GradientView()
@@ -20,6 +20,6 @@ struct Rule30SheetScreen: View {
 
 struct Rule30SheetScreen_Previews: PreviewProvider {
     static var previews: some View {
-        Rule30SheetScreen()
+        LiveDemoScreen()
     }
 }
