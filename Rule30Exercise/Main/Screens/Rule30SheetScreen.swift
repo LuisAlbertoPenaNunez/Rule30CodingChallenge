@@ -12,7 +12,7 @@ struct Rule30SheetScreen: View {
         ZStack {
             GradientView()
             
-            Image("puppy")
+            Image(puppyImagePathName)
                 .mask(CoolRule30View())
         }
     }

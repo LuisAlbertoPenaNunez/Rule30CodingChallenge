@@ -13,8 +13,8 @@ struct WelcomeScreenView: View {
             ZStack {
                 VStack {
                     Spacer()
-                    LottieView(name: "handwritten-welcome", loopMode: .playOnce)
-                    LottieView(name: "welcome_img", loopMode: .loop)
+                    LottieView(name: animationWelcome, loopMode: .playOnce)
+                    LottieView(name: animationPlanet, loopMode: .loop)
                     Spacer()
                     
                     Text("Learn about Rule 30 with us! Click the button below to start")

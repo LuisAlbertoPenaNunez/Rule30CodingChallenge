@@ -21,17 +21,17 @@ struct CoolRule30View: View {
     
     func generateText() {
         var output = String()
-        var state_u: UInt = 1 << 31
+        var state_int: UInt = 1 << 31
         for _ in 0..<32 {
-            var k = 64
-            while k >= 0 {
-                var l = (state_u >> k & 1)
-                let x = (l != 0 ? "*" : " ");
-                output.append(x)
-                k -= 1
+            var height = 64
+            while height >= 0 {
+                let bitWiseOperationToHeight = (state_int >> height & 1)
+                let outputToAppend = (bitWiseOperationToHeight != 0 ? "*" : " ");
+                output.append(outputToAppend)
+                height -= 1
             }
             output.append("\n")
-            state_u = state_u >> 1 ^ (state_u | state_u << 1)
+            state_int = state_int >> 1 ^ (state_int | state_int << 1)
         }
         typeWriter(textToOutput: output)
     }

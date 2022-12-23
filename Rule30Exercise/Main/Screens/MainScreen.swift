@@ -9,10 +9,10 @@ import SwiftUI
 
 struct MainScreen: View {
     let rule30Previews = [
-        "rule30_preview1",
-        "rule30_preview2",
-        "rule30_preview3",
-        "rule30_preview4"
+        mainScreenPreviewPicture1,
+        mainScreenPreviewPicture2,
+        mainScreenPreviewPicture3,
+        mainScreenPreviewPicture4
     ]
     
     @State private var showingCredits = false
