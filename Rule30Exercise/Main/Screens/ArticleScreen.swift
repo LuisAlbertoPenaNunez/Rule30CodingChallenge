@@ -8,13 +8,6 @@
 import SwiftUI
 
 struct ArticleScreen: View {
-    let rule30Previews = [
-        mainScreenPreviewPicture1,
-        mainScreenPreviewPicture2,
-        mainScreenPreviewPicture3,
-        mainScreenPreviewPicture4
-    ]
-    
     @State private var showingCredits = false
     
     var body: some View {
@@ -41,15 +34,7 @@ struct ArticleScreen: View {
                 }
 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(0..<rule30Previews.count, id: \.self) {index in
-                            Image(rule30Previews[index])
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 150, height: 200)
-                                .cornerRadius(16)
-                        }
-                    }
+                    Rule30GalleryView()
                 }
                 
                 Divider()
