@@ -1,0 +1,6 @@
+module Pods_Rule30Exercise {
+  umbrella header "Pods-Rule30Exercise-umbrella.h"
+
+  export *
+  module * { export * }
+}
