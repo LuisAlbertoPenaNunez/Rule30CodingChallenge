@@ -19,3 +19,4 @@ Rule 30 is an elementary cellular automaton introduced by Stephen Wolfram in 198
 
 ## Video
 
+<img src="demo.gif" width="450" alt="404 image"/>
