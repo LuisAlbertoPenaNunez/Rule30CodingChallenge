@@ -17,7 +17,7 @@ struct WelcomeScreenView: View {
                     LottieView(name: animationPlanet, loopMode: .loop)
                     Spacer()
                     
-                    Text("Learn about Rule 30 with us! Click the button below to start")
+                    Text("landing_page_subheading")
                         .font(.title3)
                         .fontWeight(.light)
                         .frame(maxWidth: .infinity)
@@ -28,7 +28,7 @@ struct WelcomeScreenView: View {
                     NavigationLink(
                         destination: MainScreen().navigationBarHidden(true),
                         label: {
-                            Text("Get Started")
+                            Text("landing_page_cta")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)

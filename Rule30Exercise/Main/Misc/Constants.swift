@@ -7,12 +7,13 @@
 
 import Foundation
 
-var puppyImagePathName = "puppy"
+let puppyImagePathName = "puppy"
 
-var mainScreenPreviewPicture1 = "rule30_preview1"
-var mainScreenPreviewPicture2 = "rule30_preview2"
-var mainScreenPreviewPicture3 = "rule30_preview3"
-var mainScreenPreviewPicture4 = "rule30_preview4"
+let mainScreenPreviewPicture1 = "rule30_preview1"
+let mainScreenPreviewPicture2 = "rule30_preview2"
+let mainScreenPreviewPicture3 = "rule30_preview3"
+let mainScreenPreviewPicture4 = "rule30_preview4"
 
-var animationWelcome = "handwritten-welcome"
-var animationPlanet = "welcome_img"
+let animationWelcome = "handwritten-welcome"
+let animationPlanet = "welcome_img"
+let fiveStarAnim = "5-stars"

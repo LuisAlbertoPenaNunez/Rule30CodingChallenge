@@ -21,20 +21,20 @@ struct MainScreen: View {
         
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment:.leading) {
-                Text("Rule 30")
+                Text("main_screen_large_title")
                     .font(.system(size: 50))
                     .fontWeight(.light)
                 HStack {
                     HStack {
-                        LottieView(name: "5-stars", loopMode: .playOnce)
+                        LottieView(name: fiveStarAnim, loopMode: .playOnce)
                             .frame(width: 70, height: 40)
-                        Text("(6200)")
+                        Text("main_screen_article_static_reviews")
                             .font(.caption)
                             .foregroundColor(.gray)
                             .fontWeight(.light)
                     }
                     Spacer()
-                    Text("2 authors")
+                    Text("main_screen_article_authors")
                         .font(.caption)
                         .foregroundColor(.gray)
                         .fontWeight(.light)
@@ -56,21 +56,18 @@ struct MainScreen: View {
                     .padding()
                 
                 HStack {
-                    Text("Rule set")
+                    Text("main_screen_article_section")
                         .bold()
                     
                 }.padding(.bottom, 16)
                 
-                
-                Text("""
-    Rule 30 is an elementary cellular automaton introduced by Stephen Wolfram in 1983.[2] Using Wolfram's classification scheme, Rule 30 is a Class III rule, displaying aperiodic, chaotic behaviour. This rule is of particular interest because it produces complex, seemingly random patterns from simple, well-defined rules. Because of this, Wolfram believes that Rule 30, and cellular automata in general, are the key to understanding how simple rules produce complex structures and behaviour in nature. For instance, a pattern resembling Rule 30 appears on the shell of the widespread cone snail species Conus textile.
-    """)
+                Text("main_screen_article")
                 .fontWeight(.light)
             }
             .padding()
             
             
-            Text("See a live demo")
+            Text("main_screen_cta")
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
@@ -86,14 +83,8 @@ struct MainScreen: View {
                 .sheet(isPresented: $showingCredits) {
                     Rule30SheetScreen()
                 }
-            
-            
-            
         }
-        
-        
     }
-    
 }
 
 struct MainScreen_Previews: PreviewProvider {
